@@ -1,0 +1,130 @@
+header {
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: sans-serif;
+    background-color: var(--backgroundColor);
+}
+
+:root {
+    --indigo: #4B0082;
+    --darkIndigo: #000113;
+    --backgroundColor: #FFF0F5;
+    --navHover: #e1d4ec
+}
+
+a {
+    text-decoration: none;
+    color: var(--indigo);
+    font-family: Calibri;
+}
+
+footer {
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--darkIndigo);
+    font-family: Calibri;
+}
+
+.title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    color: var(--indigo);
+}
+
+.logo {
+    position: relative;
+    height: 125px;
+    width: 125px;
+    margin-top: 25px;
+    margin-left: 0;
+    z-index: 10;
+}
+
+.logo-image {
+    border-radius: 50%;
+    border: 3px solid var(--darkIndigo);
+}
+
+
+.navbar {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: flex-start;
+    left: 200px;
+    right: 0;
+    top: -100px;
+    background-color: var(--backgroundColor);
+    opacity: 97%;
+    z-index: 9;
+}
+
+.navbar a {
+    display: inline-block;
+    text-align: center;
+    color: var(--indigo);
+    padding: 20px 40px;
+    transition: .3s;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar a:hover {
+    background-color: var(--navHover);
+}
+
+.nav-divider {
+    display: inline-block;
+    text-align: center;
+    border-left: .15em solid var(--darkIndigo);
+    background-color: var(--backgroundColor);
+    position: relative;
+}
+
+.socials {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #fff;
+    height: 100px;
+    width: 100px;
+}
+
+.top-divider {
+    border-top: .5em solid var(--indigo);
+}
+
+.bottom-divider {
+    border-bottom: .5em solid var(--indigo);
+}
+
+.index-about-container {
+    width: 1150px;
+    height: 200px;
+    background-color: var(--navHover);
+    position: relative;
+}
+
+.index-about h2 {
+    font-size: 50px;
+    position: absolute;
+}
+
+.index-about p{
+    font-size: 20px;
+    position: absolute;
+}

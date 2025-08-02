@@ -1,11 +1,12 @@
 html {
     background-image: linear-gradient(to bottom, var(--ucbPurple), var(--ucbPink));
+    text-shadow: .15em .15em .45em rgba(0,0,0,0.3);
 }
 
 body {
     margin-left: 6.25em;
     margin-right: 6.25em;
-    font-family: sans-serif;
+    font-family: Calibri;
 }
 
 :root {
@@ -16,13 +17,15 @@ body {
     --headerBackground: #b6acc5;
     --ucbPurple: #8a61c3;
     --ucbIndigo: #624181;
-    --ucbPink: #bc6287;
+    --ucbPink: #c67d9b;
 }
 
 a {
     text-decoration: none;
     color: var(--backgroundColor);
     font-family: Calibri;
+    padding: .5em;
+    font-size: 1em;
 }
 
 footer {
@@ -127,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .index-about-paragraph {
-    font-size: 20px;
+    font-size: 1.5em;
     margin: 0;
     padding: .5em;
     color: var(--backgroundColor);

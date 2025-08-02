@@ -11,7 +11,6 @@ body {
     margin-left: 100px;
     margin-right: 100px;
     font-family: sans-serif;
-    background-color: var(--backgroundColor);
 }
 
 :root {
@@ -20,13 +19,13 @@ body {
     --backgroundColor: #FFF0F5;
     --navHover: #e1d4ec;
     --ucbPurple: #8a61c3;
-    --ucbIndigo: #3b274e;
-    --ucbPink: #68364b;
+    --ucbIndigo: #624181;
+    --ucbPink: #bc6287;
 }
 
 a {
     text-decoration: none;
-    color: var(--indigo);
+    color: var(--backgroundColor);
     font-family: Calibri;
 }
 
@@ -39,7 +38,7 @@ footer {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--darkIndigo);
+    color: var(--backgroundColor);
     font-family: Calibri;
 }
 
@@ -48,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: auto;
     margin-right: auto;
     font-size: 50px;
-    color: var(--indigo);
+    color: var(--backgroundColor);
 }
 
 .logo {
@@ -56,13 +55,13 @@ h1, h2, h3, h4, h5, h6 {
     height: 125px;
     width: 125px;
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: 50px;
     z-index: 10;
 }
 
 .logo-image {
     border-radius: 50%;
-    border: 3px solid var(--darkIndigo);
+    border: 3px solid var(--backgroundColor);
 }
 
 
@@ -75,7 +74,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 75px;
     right: 0;
     top: -40px;
-    background-color: var(--backgroundColor);
     opacity: 97%;
     z-index: 9;
 }
@@ -83,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a {
     display: inline-block;
     text-align: center;
-    color: var(--indigo);
+    color: var(--backgroundColor);
     padding: 20px 40px;
     transition: .3s;
     text-decoration: none;
@@ -91,18 +89,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover {
-    background-color: var(--navHover);
+    background-color: var(--ucbIndigo);
 }
 
 .nav-divider {
     display: inline-block;
     text-align: center;
-    border-left: .15em solid var(--darkIndigo);
+    border-left: .15em solid var(--backgroundColor);
     background-color: var(--backgroundColor);
     position: relative;
 }
 
-.socials {
+.socials header {
+    position: relative;
+    color: #fff;
+}
+
+.socials footer {
     position: fixed;
     top: 0;
     right: 0;
@@ -112,11 +115,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .top-divider {
-    border-top: .5em solid var(--indigo);
+    border-top: .5em solid var(--backgroundColor);
 }
 
 .bottom-divider {
-    border-bottom: .5em solid var(--indigo);
+    border-bottom: .5em solid var(--backgroundColor);
 }
 
 .index-about-container {
@@ -136,4 +139,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     margin: 0;
     padding: .5em;
+    color: var(--backgroundColor);
+}
+
+.index-image {
+    border: solid var(--backgroundColor);
 }

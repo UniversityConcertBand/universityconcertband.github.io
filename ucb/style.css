@@ -1,3 +1,7 @@
+html {
+    background-image: linear-gradient(to bottom, var(--ucbPurple), var(--ucbPink));
+}
+
 header {
     margin-top: 25px;
     padding-bottom: 25px;
@@ -14,7 +18,10 @@ body {
     --indigo: #4B0082;
     --darkIndigo: #000113;
     --backgroundColor: #FFF0F5;
-    --navHover: #e1d4ec
+    --navHover: #e1d4ec;
+    --ucbPurple: #8a61c3;
+    --ucbIndigo: #3b274e;
+    --ucbPink: #68364b;
 }
 
 a {
@@ -49,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 125px;
     width: 125px;
     margin-top: 25px;
-    margin-left: 0;
+    margin-left: 25px;
     z-index: 10;
 }
 
@@ -60,14 +67,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .navbar {
-    width: 100%;
+    width: 75%;
     position: relative;
     overflow: hidden;
     display: inline-flex;
     justify-content: flex-start;
-    left: 200px;
+    left: 75px;
     right: 0;
-    top: -100px;
+    top: -40px;
     background-color: var(--backgroundColor);
     opacity: 97%;
     z-index: 9;
@@ -113,18 +120,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .index-about-container {
-    width: 1150px;
-    height: 200px;
+    width: 72em;
+    height: 16em;
     background-color: var(--navHover);
     position: relative;
 }
 
-.index-about h2 {
+.index-about-header {
     font-size: 50px;
-    position: absolute;
+    margin: 0;
+    padding: .15em;
 }
 
-.index-about p{
+.index-about-paragraph {
     font-size: 20px;
-    position: absolute;
+    margin: 0;
+    padding: .5em;
 }

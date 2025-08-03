@@ -137,9 +137,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .index-image {
+    width: 100%;
+    height: 100%;
     border: solid var(--backgroundColor);
+    display: block;
+    left: auto;
+    right: auto;
 }
 
 footer a {
     padding: 0 .5em;
 }
+
+@media screen and (max-width: 1024px)
+{
+    .index-image
+    {
+        width: 98%;
+        height: 98%;
+    }
+    a, p
+    {
+        font-size: .25em;
+    }
+    h1, h2, h3, h4, h5, h6
+    {
+        font-size: 1em;
+    }
+    body {
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+}
+

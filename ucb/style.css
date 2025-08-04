@@ -168,5 +168,36 @@ footer a {
         margin-left: .5em;
         margin-right: .5em;
     }
+    .navbar {
+        display: block;
+        left: -1.5em;
+        right: 0;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .navbar .nav-socials {
+        display: none;
+    }
+    .navbar a {
+        font-size: .75em;
+        bottom: 4.5em;
+        left: -2em;
+        padding: .5em;
+        margin: 0;
+        display: inline-flex;
+    }
+    .logo {
+        height: 50px;
+        width: 50px;
+        left: 0;
+    }
+    .logo-image {
+        border: 1px solid var(--backgroundColor);
+    }
+    .nav-divider {
+        top: 10em;
+        border-left: .15em solid var(--backgroundColor);
+        margin: 0;
+    }
 }
 

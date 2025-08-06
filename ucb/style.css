@@ -108,6 +108,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: .25em;
 }
 
+.navbar .icon {
+    display: none;
+}
+
 .top-divider {
     border-top: .5em solid var(--backgroundColor);
 }
@@ -172,7 +176,6 @@ footer a {
         display: block;
         left: -1.5em;
         right: 0;
-        flex-wrap: nowrap;
         width: 100%;
     }
     .navbar .nav-socials {
@@ -187,17 +190,51 @@ footer a {
         display: inline-flex;
     }
     .logo {
-        height: 50px;
-        width: 50px;
+        height: 3em;
+        width: 3em;
         left: 0;
     }
     .logo-image {
         border: 1px solid var(--backgroundColor);
     }
     .nav-divider {
-        top: 10em;
-        border-left: .15em solid var(--backgroundColor);
-        margin: 0;
+        display: none;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .navbar a {display: none;}
+    .navbar a.icon {
+        float: left;
+        left: 2.5em;
+        display: block;
+        top: 3.5em;
+        padding: 1em;
+    }
+
+    .navbar.responsive .logo {
+        display: none;
+    }
+    .navbar.responsive {
+        position: relative;
+        padding-bottom: 1.5em;
+    }
+    .navbar.responsive a.icon {
+        position: absolute;
+        display: block;
+        left: 2em;
+        top: -.25em;
+        bottom: 16.75em;
+        margin: 0;
+        padding: .55em;
+    }
+    .navbar.responsive a {
+        left: 2em;
+        top: 1.75em;
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
 

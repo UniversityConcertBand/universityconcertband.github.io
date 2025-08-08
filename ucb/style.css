@@ -120,6 +120,10 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: .5em solid var(--backgroundColor);
 }
 
+.thin-bottom-divider {
+    border-bottom: .05em solid var(--backgroundColor);
+}
+
 .index-about-container {
     width: 72em;
     height: 16em;
